@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8">Tailwind CSS Form Example</h1>
+
+        <form class="bg-white p-6 rounded-lg shadow-1h max-w-md mx-auto">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                <input type="text" id="name" name="name" class="form-input w-full px-4 py-2 rounded-lg border border-gray-300" placeholder="Enter your name">
+               
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                <input type="text" id="email" name="email" class="form-input w-full px-4 py-2 rounded-lg border border-gray-300" placeholder="Enter your email">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                <input type="password" id="password" name="password" class="form-input w-full px-4 py-2 rounded-lg border border-gray-300" placeholder="Enter your password">
+            </div>   
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" class="form-textarea w-full px-4 py-2 rounded-lg border border-gray-300" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="f;ex items-center mb-4">
+                <input type="checkbox" id="agree" name="agree" class="form-checkbox h-4 w-4 text-indigo-600">
+                <label for="agree" class="ml-2 text-gray-700 text-sm">I agree to the terms and conditions</label>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-500 text-white font-semibold py  px-4 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring-2
+            focus:ring-blue-500 focus:ring-offset-2">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
